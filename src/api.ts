@@ -1,6 +1,6 @@
 import type { Generation } from "./types";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://mini-code-copilot-backend-1.onrender.com";
 
 export async function generateCode(prompt: string, language: string): Promise<Generation> {
     const res = await fetch(`${API_BASE}/api/generate`, {
